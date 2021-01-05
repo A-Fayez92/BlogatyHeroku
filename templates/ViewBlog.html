@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block content %}
+
+
+<br>
+<div class="row">
+	<div class="col-md-6">
+		<div class="card card-body">
+			<h5>{{blog.title}}</h5>
+            <textarea>{{blog.content}}</textarea>
+            <a class="btn btn-sm btn-primary" href="{% url 'home' %}">Back</a>
+		</div>
+	</div>
+</div>
+{% endblock %}
